@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>fire-node</title>
+
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: <%= f_key %>,
+        authDomain: <%= f_auth_dom %>,
+        databaseURL: <%= f_data_b_url %>,
+        projectId: <%= f_porj_id %>,
+        storageBucket: <%= f_store_bucket %>,
+        messagingSenderId: <%= f_message_sen_id %>
+      };
+      firebase.initializeApp(config);
+    </script>
+  </head>
+  <body>
+
+
+  </body>
+</html>
