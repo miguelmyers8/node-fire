@@ -7,19 +7,22 @@
     <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
     <script>
       // Initialize Firebase
+      //console.log("hello")
+      //console.log(<%= f_data_b_url %>)
       var config = {
-        apiKey: <%= f_key %>,
-        authDomain: <%= f_auth_dom %>,
-        databaseURL: <%= f_data_b_url %>,
-        projectId: <%= f_porj_id %>,
-        storageBucket: <%= f_store_bucket %>,
-        messagingSenderId: <%= f_message_sen_id %>
+        apiKey: "<%= f_key %>",
+        authDomain: "<%= f_auth_dom %>",
+        databaseURL: "<%= f_data_b_url %>",
+        projectId: "<%= f_porj_id %>",
+        storageBucket: "<%= f_store_bucket %>",
+        messagingSenderId: "<%= f_message_sen_id %>"
       };
+
       firebase.initializeApp(config);
     </script>
   </head>
   <body>
-
+    <h1>home</h1>
 
   </body>
 </html>
